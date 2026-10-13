@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in - Telling</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+
+  <main class="auth-page">
+    <div class="auth-box">
+
+      <div class="auth-header">
+        <h1 class="brand">TELLING</h1>
+        <p class="tagline">Your Voice. Your Story.</p>
+        <h2>Welcome back</h2>
+        <p>Log in to continue to Telling</p>
+      </div>
+
+      <form id="loginForm" novalidate>
+
+        <div class="form-group">
+          <div class="field">
+            <span class="icon">👤</span>
+            <input type="text" id="username" placeholder="Username" autocomplete="username" />
+          </div>
+          <p class="error" id="usernameError"></p>
+        </div>
+
+        <div class="form-group">
+          <div class="field">
+            <span class="icon">🔒</span>
+            <input type="password" id="password" placeholder="Password" autocomplete="current-password" />
+            <button type="button" class="toggle-pass" data-target="password">👁️</button>
+          </div>
+          <p class="error" id="passwordError"></p>
+        </div>
+
+        <p class="error" id="formError"></p>
+
+        <button type="submit" class="btn">Log In</button>
+      </form>
+
+      <p class="switch-text">New to Telling? <a href="signup.html">Create account</a></p>
+
+    </div>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

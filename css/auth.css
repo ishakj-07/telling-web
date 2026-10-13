@@ -1,0 +1,166 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  background: radial-gradient(circle at top, #2a1519 0%, var(--bg) 60%);
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.auth-header .brand {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+
+.auth-header .tagline {
+  color: var(--peach);
+  letter-spacing: 2px;
+  margin: 4px 0 24px;
+}
+
+.auth-header h2 {
+  font-size: 1.9rem;
+}
+
+.auth-header p {
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* ---------- Form fields ---------- */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.field {
+  position: relative;
+}
+
+.field .icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+}
+
+.field input {
+  width: 100%;
+  padding: 16px 48px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  color: var(--text);
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  color-scheme: dark; /* makes the date picker dark */
+}
+
+.field input:focus {
+  border-color: var(--peach);
+}
+
+.toggle-pass {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin: 6px 0 0 8px;
+}
+
+.error:empty {
+  display: none;
+}
+
+.counter {
+  text-align: right;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin: 6px 12px 0 0;
+}
+
+/* ---------- Notices (signup) ---------- */
+.notice {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.notice.info {
+  background: #2d1820;
+  border: 1px solid #6b2d3e;
+  color: var(--text);
+}
+
+.notice.warn {
+  background: #fff1d6;
+  color: #8a5a00;
+}
+
+/* ---------- Checkboxes ---------- */
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.check-row input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--peach);
+}
+
+.check-row a {
+  color: var(--peach);
+  font-weight: 700;
+}
+
+/* ---------- Bottom link ---------- */
+.switch-text {
+  text-align: center;
+  margin-top: 22px;
+  color: var(--text-muted);
+}
+
+.switch-text a {
+  color: var(--peach);
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
