@@ -1,0 +1,90 @@
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px 16px;
+  text-align: center;
+  background: radial-gradient(circle at top, #2a1519 0%, var(--bg) 60%);
+}
+
+.logo-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid var(--peach);
+  background: var(--maroon-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px rgba(224, 160, 126, 0.25);
+  margin-bottom: 24px;
+}
+
+.logo-emoji {
+  font-size: 3.5rem;
+}
+
+.brand {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+}
+
+.tagline {
+  color: var(--peach);
+  letter-spacing: 2px;
+  margin: 8px 0 32px;
+}
+
+.splash-card {
+  max-width: 420px;
+  width: 100%;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.icon-box {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 18px;
+  background: #3a1d24;
+  border: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.splash-card h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.accent {
+  color: var(--peach);
+  margin-bottom: 16px;
+}
+
+.description {
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.privacy-pill {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.footer-text {
+  margin-top: 28px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,69 @@
+/* ============ THEME VARIABLES ============ */
+:root {
+  --bg: #0b0809;
+  --bg-soft: #140e10;
+  --card: #1a1214;
+  --card-border: #3a2327;
+  --maroon: #6b2d3e;
+  --maroon-dark: #4a1f2b;
+  --peach: #e0a07e;
+  --peach-light: #f0b494;
+  --text: #f5ebe6;
+  --text-muted: #b8a9a4;
+  --danger: #f44336;
+  --radius: 20px;
+}
+
+/* ============ RESET ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ============ BUTTONS ============ */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  background: var(--peach);
+  color: #1a1214;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+  background: var(--peach-light);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* ============ CARD ============ */
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
